@@ -14,6 +14,6 @@ while line:
 
     for i in range(0, len(replacement)):
         line = line.replace('@'+str(i)+'@', replacement[i])
-        print(line)
+    print(line)
 
     line = sys.stdin.readline()
