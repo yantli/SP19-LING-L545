@@ -1,0 +1,61 @@
+Multichar_Symbols
+
+%<v%>                ! Verb
+%<tv%>               ! Transitive
+%<aor%>              ! Aorist
+%<m%>                ! Masculine
+%<f%>                ! Feminine
+%<nt%>               ! Neuter
+%<pl%>               ! Plural
+
+@P.Gender.Msc@       ! Согласование мужского рода, Masculine agreement
+@P.Gender.Fem@       ! Согласование женского рода, Feminine agreement
+@P.Gender.Neu@       ! Согласование средного рода, Neuter agreement
+@P.Gender.Plu@       ! Согласование множественного падежа, Plural agreement
+
+
+# %[+в%]               ! Префикс в-, Prefix v-
+# %[+й%]               ! Префикс й-, Prefix j-
+# %[+б%]               ! Префикс б-, Prefix b-
+# %[+р%]               ! Префикс р-, Prefix r-
+
+@R.Gender.Msc@       ! Согласование мужского рода
+@R.Gender.Fem@       ! Согласование женского рода
+@R.Gender.Neu@       ! Согласование средного рода
+@R.Gender.Plu@       ! Согласование множественного падежа
+
+# %[+msc%]             ! Masculine agreement
+# %[+fem%]             ! Feminine agreement
+# %[+neu%]             ! Neuter agreement
+# %[+plu%]             ! Plural agreement
+
+# %>                   ! Граница морфемы, Morpheme boundary
+
+LEXICON Root
+
+Prefixes ;
+
+
+LEXICON Prefixes
+
+@P.Gender.Msc@:@P.Gender.Msc@в Verbs ;
+@P.Gender.Fem@:@P.Gender.Fem@й Verbs ;
+@P.Gender.Neu@:@P.Gender.Neu@б Verbs ;
+@P.Gender.Plu@:@P.Gender.Plu@р Verbs ;
+
+
+LEXICON AGR
+
+@R.Gender.Msc@%<m%>:@R.Gender.Msc@ # ;
+@R.Gender.Fem@%<f%>:@R.Gender.Fem@ # ;
+@R.Gender.Neu@%<nt%>:@R.Gender.Neu@ # ;
+@R.Gender.Plu@%<pl%>:@R.Gender.Plu@ # ;
+
+
+LEXICON V-TV
+
+%<v%>%<tv%>%<aor%>:%>уна AGR ;
+
+LEXICON Verbs
+
+бицине:иц V-TV ;    ! "говорить", "say"
